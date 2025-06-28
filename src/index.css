@@ -1,0 +1,904 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.landing-container {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 20px; 
+    min-height: 80vh;
+    background-color: #f8fafc;
+    justify-content: space-evenly;
+}
+.right-container {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+
+  .left-container {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  
+  .landing-title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #101B21; 
+    margin-bottom: 20px;
+  }
+  
+  .landing-title .highlight {
+    color: #101B21 /* teal/green */;
+    font-size: 56px;
+  }
+  
+  .landing-description {
+    font-size: 18px;
+    color: #475569; /* muted slate */
+    margin-bottom: 30px;
+  }
+  
+  .email-signup-box {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    max-width: 480px;
+    width: 100%;
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .email-input:focus {
+    border-color: #0f766e;
+  }
+  
+  .email-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #298E9E;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-button:hover {
+    background-color: #0d9488;
+  }
+  
+  .email-button .icon {
+    font-size: 18px;
+  }
+
+  .heading-Icon{
+    display: flex;
+  }
+
+  .partner-logo
+  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7rem;
+    font-size: 30px;
+    font-weight: 700;
+    color: #132e2c;
+    margin-top: 30px;
+  }
+    
+  .card-ui {
+    position: relative;
+    width: 320px;
+  }
+  
+  .credit-card {
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    background: linear-gradient(to bottom right, #0ea5e9, #298E9E);
+    color: white;
+    border-radius: 16px;
+    width: 180px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-footer {
+    margin-top: 40px;
+    background-color: #102a23; /* dark green */
+    padding: 18px;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-brand {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .card-number {
+    padding: 0px 22px 56px 22px;
+    font-size: 20px;
+  }
+
+  .card-header{
+    padding: 30px 22px 0px 22px;
+    font-size: 15px;
+  }
+  
+  .form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .user-avatar {
+    background: #298E9E;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .invoice {
+    margin-bottom: 5px;
+    border: 0.5px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+  }
+  
+  .invoice-label {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .invoice-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+  
+  .invoice-date {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: border 0.2s ease;
+    justify-content: space-between;
+  }
+  
+  .option input[type="radio"] {
+    accent-color: #54d1c6;
+  }
+  
+  .option:hover {
+    border-color: #54d1c6;
+  }
+  
+  .pay-button {
+    width: 100%;
+    background-color: rgb(7, 37, 53);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .pay-button:hover {
+    background-color: #1e293b;
+  }
+  
+
+  .payment-section {
+    z-index: 10;
+    max-width: 1095px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 50px 50px;
+    /* background: #ffffff; */
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 8%);
+  }
+  
+  .payment-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-tag {
+    color: #298E9E;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .payment-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .sub-text {
+    color: #6b7280;
+    font-size: 16px;
+    max-width: 600px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 7rem;
+  }
+  
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .feature-icon {
+    font-size: 28px;
+    color: #298E9E;
+  }
+  
+  .feature-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+
+  .why-finpay {
+    padding: 4rem;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .card {
+    background: #f7fbfd;
+    padding: 2rem;
+    border-radius: 12px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
+    display: flex;
+    flex-direction: column;
+    padding: 10p;
+  }
+  
+  .card h3 {
+    display: flex;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #1c8ca8;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    margin-left: 35px;
+  }
+  
+  .bold-text {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    width: 75%;
+  }
+  
+  .sub-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .graph-card {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  
+  .graph-img {
+    width: 90%;
+    margin-left: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .why-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  } 
+  
+  .card-1 {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-1 p{
+    display: flex; 
+    font-weight: 400;
+    font-size: 25px;
+    justify-content: flex-star;
+    color: #2e2d2de0;
+    margin-left: 38px;
+    text-align: left;
+  }
+  
+  .card-2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 25px;
+    justify-content: flex-star;
+    color: #2e2d2de0;
+    margin-left: 128px;
+    text-align: left;
+    margin-right: 130px;
+    margin-top: 22px;
+  }
+
+  .return1{
+    background-color: rgb(3, 51, 71);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 70px;
+  }
+
+  .return2{
+    background-color: rgb(12, 58, 79);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+  }
+
+  .return3{
+    width: 40%;
+    font-size: xx-large;
+    font-weight: 400;
+    margin-left: 15px;
+  }
+
+  .return4{
+    font-weight: 200;
+    font-size: small;
+    text-align: left;
+    color: #1c8ca8;
+    margin-bottom: 5px;
+  }
+
+  .return5{
+    font-size: 55px;
+    text-align: left;
+    color: #b4c4ce;
+    font-weight: 600;
+  }
+
+  .return6{
+    text-align: left;
+    font-size: 23px;
+    color: #b4c4ce;
+    margin-bottom: 10px;
+  }
+  .return7{
+    text-align: left;
+    font-size: x-small;
+    color: #b4c4ce;
+    font-weight: 100;
+    width: 60%;
+  }
+
+  h1 {
+    color: #2a5885;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stat {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing {
+    background-color: #2a5885;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-new{
+background: #f7fbfd;
+padding: 2rem;
+border-radius: 12px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.our-mission-card{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 50px 50px 0px 50px;
+margin-top: 50px;
+}
+
+.our-mission-card h1{
+    font-size: 12px;
+    color: rgb(112, 164, 171);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.p1{
+    font-size: 46px;
+    font-weight: 400;
+    width: 32%;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.p2{
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+
+
+
+.stats-header{
+font-size: 65px;
+font-weight: 600;
+margin-bottom: 0px;
+color: rgb(24 35 32);
+}
+
+.stats-description{
+font-size: 18px;
+margin-bottom: 0px;
+font-weight: 500;
+color:#298e9d;
+}
+
+
+.pricing-container{
+display: flex;
+gap: 2rem;
+justify-content: center;
+margin-top: 30px;
+}
+
+.pricing-card{
+padding: 40px;
+border-radius: 30px;
+width: 32%;
+height: 30%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.price{
+font-size: 25px;
+font-weight: 300;
+display: flex;
+gap: 12rem;
+margin-top: 50px;
+}
+
+.plan-name{
+    font-size: 40px;
+}
+
+/* FinpaySection.css */
+  .finpay-hero {
+    background-color: #033347;
+    color: #ffffff;
+    padding: 60px 20px;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: left;
+  }
+  
+  .finpay-hero-content {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .finpay-p-h1{
+    width: 44%;
+  }
+  .finpay-try {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    color: rgb(42, 143, 160);
+  }
+  
+  .finpay-heading {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.3;
+    color:#ffffffd6;
+    margin-bottom: 20px;
+  }
+  
+  .finpay-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: rgb(42, 143, 160);
+    opacity: 0.9;
+  }
+  
+  .finpay-buttons {
+    margin-top: 5%;
+    display: flex;
+    width: 30%;
+    height: 30%;
+    gap: 15px;
+  }
+  
+  .get-started {
+    background-color: rgb(42, 143, 160);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 13px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .learn-more {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff30;
+    padding: 12px 24px;
+    border-radius: 13px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .finpay-footer {
+    background-color: #ffffff;
+    padding: 40px 20px 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #033347;
+    display: flex;
+    gap: 3px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links p {
+    font-size: 14px;
+    margin: 4px 0;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .footer-socials {
+    text-align: right;
+  }
+  
+  .footer-socials p {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+    color: #0a2540;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .landing-container {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+
+  .right-container, .left-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .landing-title {
+    font-size: 36px;
+  }
+
+  .email-signup-box {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .email-button {
+    width: 100%;
+  }
+
+  .partner-logo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .card-1, .card-2 {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+
+  .finpay-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .finpay-buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-title {
+    font-size: 28px;
+  }
+
+  .landing-description {
+    font-size: 16px;
+  }
+
+  .card-number {
+    font-size: 16px;
+  }
+
+  .card-header {
+    font-size: 12px;
+  }
+
+  .invoice-amount {
+    font-size: 20px;
+  }
+
+  .stats-header {
+    font-size: 40px;
+  }
+
+  .stats-description {
+    font-size: 14px;
+  }
+
+  .plan-name {
+    font-size: 28px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-container {
+    padding: 20px;
+  }
+
+  .landing-title {
+    font-size: 24px;
+  }
+
+  .email-signup-box {
+    gap: 6px;
+  }
+
+  .email-input {
+    font-size: 14px;
+  }
+
+  .email-button {
+    font-size: 14px;
+  }
+
+  .features-grid {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .stats-header {
+    font-size: 28px;
+  }
+
+  .stats-description {
+    font-size: 12px;
+  }
+
+  .pricing-card {
+    padding: 20px;
+  }
+
+  .finpay-heading {
+    font-size: 24px;
+  }
+
+  .finpay-description {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    font-size: 18px;
+  }
+
+  .footer-links h4 {
+    font-size: 14px;
+  }
+
+  .footer-links p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
