@@ -21,10 +21,7 @@ Finpay is a modern financial application designed to streamline payment processe
 ## Screenshots
 
 ### Desktop View
-![Desktop View](./screenshots/desktop-view.png)
-
-### Mobile View
-![Mobile View](./screenshots/mobile-view.png)
+![Desktop View](./screenShot.png)
 
 ## Installation
 
@@ -42,7 +39,7 @@ Finpay is a modern financial application designed to streamline payment processe
    ```
 4. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Folder Structure
@@ -50,9 +47,9 @@ Finpay is a modern financial application designed to streamline payment processe
 ```
 Finpay-Project/
 ├── src/
+│   ├── assests
 │   ├── App.tsx
 │   ├── index.css
-│   ├── assets/
 │   └── ...
 ├── README.md
 └── package.json
