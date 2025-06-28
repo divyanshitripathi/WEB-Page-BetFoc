@@ -1,25 +1,13 @@
-# Finpay Project
-
-Finpay is a modern financial application designed to streamline payment processes, manage cash flow, and provide unmatched security for businesses of all sizes. This project is responsive and works seamlessly across all screen sizes, from desktops to mobile devices.
-
+# Finpay Project For Web Design
 ## Features
-
 - **Responsive Design**: Optimized for all screen sizes.
-- **Payment Tools**: Includes invoicing, integrations, and multiple payment options.
-- **Security**: Organization-wide MFA, card-locking, and account-level controls.
-- **Future Payment**: Scalable financial operating system.
-- **Why Us Section**: Highlights Finpay's benefits and customer success stories.
-- **Pricing Plans**: Choose between Plus and Premium plans.
-- **Mission Statement**: Showcases Finpay's impact on businesses.
 
 ## Technologies Used
-
 - **React**: For building the user interface.
-- **Tailwind CSS**: For styling and responsiveness.
+- **CSS**: For styling and responsiveness.
 - **React Icons**: For adding icons to the application.
 
 ## Screenshots
-
 ### Desktop View
 ![Desktop View](./screenShot.png)
 
